@@ -35,6 +35,7 @@ function onInputBlur (){
     
 if (inputLength === this.value.length) {
     inputEl.classList.add('valid');
+    inputEl.classList.remove('invalid')
 } else {
     inputEl.classList.add('invalid');}
 

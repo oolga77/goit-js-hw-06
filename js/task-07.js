@@ -7,7 +7,7 @@
 const inputEl = document.getElementById('font-size-control');
 const spunEl = document.getElementById('text');
 
-inputEl.addEventListener('change', handleInputChange);
+inputEl.addEventListener('input', handleInputChange);
 
 function handleInputChange(event) {
 

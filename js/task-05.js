@@ -5,11 +5,15 @@ const nameLabel = document.getElementById('name-output');
 
 
 
-inputEl.addEventListener('input', onInputChange);
+
 
 function onInputChange (event) {
+    if(event.currentTarget.value.trim() === "") {
+        nameLabel.textContent = "Anonymous";
+    } else {
+    //console.log(nameLabel.textContent)
     
-    nameLabel.textContent = event.currentTarget.value;
+    nameLabel.textContent = event.currentTarget.value.trim();}
    
 }
-
+inputEl.addEventListener('input', onInputChange);
